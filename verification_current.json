@@ -1,0 +1,441 @@
+{
+  "portfolio_checks": [
+    {
+      "folder": "results_2015_2025",
+      "experiment": "E0_baseline",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_2015_2025",
+      "experiment": "E1_raw_cut",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_2015_2025",
+      "experiment": "E2_residual_cut",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_with_reversal",
+      "experiment": "E0_baseline",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_with_reversal",
+      "experiment": "E1_raw_cut",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_with_reversal",
+      "experiment": "E2_residual_cut",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_raw_factors",
+      "experiment": "cut_amplitude",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_raw_factors",
+      "experiment": "cut_reversal",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "raw_amplitude",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "raw_reversal",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "gru_amplitude",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "dbd_amplitude",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "gru_reversal",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "dbd_reversal",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "dbd_two_factor",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "dbd_amplitude_residual_vs_raw_gru",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "dbd_reversal_residual_vs_raw_gru",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_replication",
+      "experiment": "alpha158_lgb",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 2673
+    },
+    {
+      "folder": "results_stacking_2021_2025",
+      "experiment": "A_alpha158",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 1211
+    },
+    {
+      "folder": "results_stacking_2021_2025",
+      "experiment": "B_plus_two_dbd",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 1211
+    },
+    {
+      "folder": "results_stacking_2021_2025",
+      "experiment": "C_plus_residual_two_dbd",
+      "nav_cost_cagr_mdd": "PASS",
+      "days": 1211
+    }
+  ],
+  "neural_checkpoint_replay": [
+    {
+      "factor": "amplitude",
+      "model": "dbd_2015",
+      "rows": 276,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2016",
+      "rows": 267,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2017",
+      "rows": 275,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2018",
+      "rows": 281,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2019",
+      "rows": 296,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2020",
+      "rows": 295,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2021",
+      "rows": 298,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2022",
+      "rows": 298,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2023",
+      "rows": 299,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2024",
+      "rows": 300,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "dbd_2025",
+      "rows": 299,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2015",
+      "rows": 276,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2016",
+      "rows": 267,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2017",
+      "rows": 275,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2018",
+      "rows": 281,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2019",
+      "rows": 296,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2020",
+      "rows": 295,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2021",
+      "rows": 298,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2022",
+      "rows": 298,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2023",
+      "rows": 299,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2024",
+      "rows": 300,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "amplitude",
+      "model": "gru_2025",
+      "rows": 299,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2015",
+      "rows": 274,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2016",
+      "rows": 266,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2017",
+      "rows": 275,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2018",
+      "rows": 281,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2019",
+      "rows": 296,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2020",
+      "rows": 295,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2021",
+      "rows": 287,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2022",
+      "rows": 264,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2023",
+      "rows": 256,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2024",
+      "rows": 268,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "dbd_2025",
+      "rows": 282,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2015",
+      "rows": 274,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2016",
+      "rows": 266,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2017",
+      "rows": 275,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2018",
+      "rows": 281,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2019",
+      "rows": 296,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2020",
+      "rows": 295,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2021",
+      "rows": 287,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2022",
+      "rows": 264,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2023",
+      "rows": 256,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2024",
+      "rows": 268,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    },
+    {
+      "factor": "reversal",
+      "model": "gru_2025",
+      "rows": 282,
+      "max_absolute_error": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "completed_neural_models": 44
+}

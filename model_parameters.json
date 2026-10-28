@@ -1,0 +1,46 @@
+{
+  "paper_aligned": {
+    "sequence_length": 20,
+    "input_channels": 2,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "max_epochs": 100,
+    "early_stopping_patience": 20,
+    "loss_family": "ICLoss"
+  },
+  "implementation_assumptions": {
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0,
+    "gradient_clip_l2": 5,
+    "dropout": 0,
+    "bidirectional": false,
+    "bias": true,
+    "head": "Linear(64,1), bias=True, no output activation",
+    "loss": "negative Pearson correlation across one date; centered score and label; denominator clamp 1e-8",
+    "validation_metric": "equal-weight mean negative Pearson IC over weekly validation dates",
+    "early_stop_min_delta": 0,
+    "normalization": "train-only median and 1.4826*MAD over all training sequence elements; scale floor1e-6; clip[-5,5]",
+    "mask": "raw A >= arithmetic median / raw A < arithmetic median; zero complete input row; retain all20 time steps",
+    "date_order": "numpy generator(seed=2026) shuffles training dates each epoch",
+    "seed": 2026,
+    "batch": "one complete weekly cross-section, dynamic number of stocks",
+    "output_sign": "positive IC optimization, no OOS sign flip",
+    "parameter_count": {
+      "GRU": 38081,
+      "DBD_GRU": 76097
+    },
+    "missing_window_policy": "20 consecutive market trading dates; require all inputs finite and positive volume on every date; do not replace missing values with zero"
+  },
+  "not_done": [
+    "parameter-count-matched GRU",
+    "multiple random seeds",
+    "three-factor active-flow branch",
+    "exact PIT neutralization and constrained index enhancement"
+  ]
+}

@@ -1,0 +1,36 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- 数据（体积大 / 供应商授权，不入库）----
+data/
+*.parquet
+*.bin
+research_cache/
+sequence_cache/
+data/research_2009_2025/
+wind_raw/
+wind_normalized/
+verified_wind_join/
+results_neural_grid/
+*.pending.gz
+
+# ---- 产出与缓存 ----
+*.log
+DELIVERY_SHA256.json
+.ipynb_checkpoints/
+
+# ---- 环境 / 编辑器 ----
+.env
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

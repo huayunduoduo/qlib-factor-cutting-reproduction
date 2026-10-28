@@ -1,0 +1,11 @@
+pyqlib==0.9.7
+lightgbm==4.7.0
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+pyarrow==25.0.1
+torch==2.14.1
+threadpoolctl==3.6.0
+fire==0.7.1
+PyYAML==6.0.3

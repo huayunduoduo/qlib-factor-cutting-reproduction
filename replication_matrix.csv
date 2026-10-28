@@ -1,0 +1,23 @@
+﻿item,reference_or_project_requirement,status,implementation_or_limitation,file
+行情期限,覆盖2009—2025，并保留特征预热,已完成,冻结至2025-12-31；原始包SHA256已核对,data/research_2009_2025
+成交笔数,真实成交笔数,部分覆盖,Wind真实数据；早年及部分证券缺失，不填零,coverage_2009_2025.csv
+成交金额,真实原币值成交金额,替代来源已核验,社区Tushare千元金额×1000，非Wind金额；与笔数跨供应商拼接,amount_audit.json
+理想振幅,20日高低价各25%振幅均值差,已实现,high/low-1；稳定排序处理并列,research/features.py
+理想反转,20日每笔金额高低各10日收益加总差,已实现,金额/正成交笔数；不把成交量当笔数,research/features.py
+主动买卖,低状态25%小单流入强度均值,未运行,缺小单主动买额及卖额；原文表4涨跌幅与附录收盘价不一致，保留显式变体；已修正错误相减,research/features.py
+DBD结构,双GRU、末时刻隐藏状态差,已实现,20×2；原始A时序算术中位数；>=与<掩码；整行遮零,research/neural.py
+模型参数,hidden64、两层、最多100轮、早停20,已对齐,对振幅和反转各跑普通GRU/DBD；种子2026,run_neural_grid.py
+其他超参数,原文未披露完整细节,实现假设,Adam lr0.001、梯度裁剪5、MAD缩放±5；不宣称研报参数,research/neural.py
+训练标签,未来20日收益,项目对齐口径,t+1收盘入场至t+21收盘；原文未明确两端成交时点,research/features.py
+滚动窗口,研报5年窗口、年底更新,项目扩展,5年训练+1年验证+1年测试，2015—2025共11折；边界标签成熟清除,research/splits.py
+周抽样,训练每周最后交易日,已实现,神经训练及验证周抽样；验证抽样为本实现约定,run_neural_grid.py
+股票池,研报全A股及宽基比较,范围缩小,本项目历史沪深300；社区历史区间未与官方档案逐条独立核验,research/data.py
+行业市值中性化,历史行业与市值回归,不能完成,缺PIT行业、市值；不拿现今分类回填历史,research/preprocess.py
+ST和新股过滤,剔除ST、上市未满60天,不能精确完成,缺完整历史状态和已核验上市日期,research/evaluation.py
+交易涨跌停,真实涨跌停成交约束,近似,9.5%绝对收益代理，不等于各板块/ST真实涨跌停价,research/evaluation.py
+三因子DBD-Combine,三模型输出对称正交后等权,不能完成,主动买卖缺数据；仅提供明确命名的两因子实验,research/combine.py
+十组收益,月频十分组检验,部分完成,月末20日标签分组均值；不是可累乘或可交易多空日净值,evaluate_replication.py
+约束指数增强,个股、行业、Barra、成分、换手约束,不能完成,缺历史基准权重、Barra暴露及行业数据；Top50不冒充原指增,research/evaluation.py
+下游融合,向Alpha158提供新增信号,扩展实验,严格上游OOS；完整5+1下游首次测试2021，不能伪造2015前得分,run_stacking.py
+费用与风险,年化、回撤、IR、分年,研究模拟,买5bp卖15bp；95%仓位；停牌缺价沿用最后价格；不是实盘,research/evaluation.py
+数据时点,真实历史可得信息,有限保证,信号/标签严格因果；供应商当前修订历史快照并非逐日历史版本,provenance/source_manifest.json
